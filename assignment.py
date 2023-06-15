@@ -6,4 +6,3 @@ bottle_per_zip = df.groupby(["zip_code"])["bottles_sold"].max().sort_values(asce
 print(bottle_per_zip)
 
 
-
