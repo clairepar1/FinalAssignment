@@ -17,7 +17,7 @@ plt.show()
 total = df["sale_dollars"].sum()
 df["percentage"] = (df["sale_dollars"]*100) / total
 total_percentage = df.groupby(["store_name"])["percentage"].sum().sort_values(ascending=False)
-print(total_percentage)
+#print(total_percentage)
 #print(df[["store_number","percentage"]])
 plt.scatter(total_percentage, total_percentage.index, c=np.random.rand(len(total_percentage),3))
 plt.yticks(fontsize=6)
