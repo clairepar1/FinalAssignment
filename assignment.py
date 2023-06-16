@@ -17,3 +17,4 @@ plt.show()
 total = df["sale_dollars"].sum()
 df['percentage'] = (df['sale_dollars']*100) / total
 print(df[['store_name','percentage']])
+
