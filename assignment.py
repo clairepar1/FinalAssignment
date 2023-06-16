@@ -14,8 +14,6 @@ plt.ylabel("Bottles Sold")
 plt.show()
 """
 #Percentage of sales per store
-#print(df["sale_dollars"],df["store_name"])
 total = df["sale_dollars"].sum()
-
 df['percentage'] = (df['sale_dollars']*100) / total
-print(df[['store_number','percentage']])
+print(df[['store_name','percentage']])
